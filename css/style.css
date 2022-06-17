@@ -10,12 +10,15 @@ body{
 }
 
 main{
+    background-color: rgb(24, 24, 24);
     height: 100vh;
+    display: flex;
 }
 
 nav{
     background-color: black;
     width: 200px;
+    height: 100%;
 }
 
 nav img{
@@ -24,7 +27,26 @@ nav img{
 }
 
 nav li{
+    color: lightgray;
     margin-left: 30px;
     list-style-type: none;;
     margin-bottom: 10px;
 }
+
+nav h4{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-bottom{
+   margin-top: 100px;
+   margin-left: 30px;
+    
+}
+
+.nav-bottom div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
