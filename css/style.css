@@ -15,32 +15,35 @@ body{
 }
 
 main{
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(17, 17, 17);
     width: 100%;
+    height: calc(100% - 70px);
     display: flex;
 }
 
-nav{
+aside{
+    display: flex;
+    flex-direction: column;
     background-color: black;
-    width: 20%;
+    width: 200px;
     height: 100%;
     flex-shrink: 0;
     
 }
 
-nav img{
+aside img{
     width: 80%;
     padding: 20px;
 }
 
-nav li{
+aside li{
     color: lightgray;
     margin-left: 30px;
     list-style-type: none;;
     margin-bottom: 10px;
 }
 
-nav h4{
+aside h4{
     margin-left: 30px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -55,6 +58,12 @@ nav h4{
 .nav-bottom div{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.nuova-playlist{
+    
+    flex-grow: 1;
+    overflow: auto;
 }
 
 
@@ -72,6 +81,8 @@ nav h4{
 
 .playlist{
     width: 80%;
+    overflow: auto;
+    flex-grow: 1;
     
 }
 
@@ -82,12 +93,16 @@ nav h4{
 
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
 
 .img-wrap{
-    margin: 20px 10px;
-    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc( 100% / 6);    
     position: relative;
     
 }
@@ -139,9 +154,41 @@ nav h4{
 
 .container2{
     display: flex;
-    width: 40%;
+    
 }
 
 .circle{
     border-radius: 50%;
+    
+}
+
+footer{
+    height: 70px;
+    width: 100%;
+    background-color:rgb(35, 35, 35);
+}
+
+
+.flex{
+    display: flex;
+
+}
+
+.song{
+    height: 50px;
+    width: 70px;
+    
+}
+
+.song img{
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.song h5{
+    margin-top: 30px;
+    margin-left: 5px
+    
 }
